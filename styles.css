@@ -12,7 +12,7 @@ html, body {
 .main {
   width: 100vw;
   height: 100vh;
-  background-image: url('./images/pattern-background-desktop.svg') no-repeat;
+  background: url('./images/pattern-background-desktop.svg') no-repeat;
   background-color: hsl(225, 100%, 94%);
   font-family: 'Red Hat Display', sans-serif;
   overflow-y: hidden;
@@ -21,6 +21,10 @@ html, body {
 .card {
   background: hsl(225, 100%, 98%);
   width: 300px;
+  margin: 20% auto;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 4px 4px 15px 0px rgba(85, 101, 112, 0.2);
 }
 
 .attribution { font-size: 11px; text-align: center; }
