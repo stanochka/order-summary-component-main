@@ -15,16 +15,74 @@ html, body {
   background: url('./images/pattern-background-desktop.svg') no-repeat;
   background-color: hsl(225, 100%, 94%);
   font-family: 'Red Hat Display', sans-serif;
+  color: hsl(223, 47%, 23%);
   overflow-y: hidden;
 }
 
 .card {
-  background: hsl(225, 100%, 98%);
-  width: 300px;
-  margin: 20% auto;
+  background: white;
+  width: 400px;
+  margin: 10vh auto;
   border-radius: 20px;
-  padding: 10px;
-  box-shadow: 4px 4px 15px 0px rgba(85, 101, 112, 0.2);
+  box-shadow: 4px 4px 15px 0px rgba(85, 101, 112, 0.1);
+  text-align: center;
+}
+
+.cardContent {
+  padding: 30px;
+}
+
+.headerImage {
+  width: 400px;
+  height: 200px;
+  background-image: url('./images/illustration-hero.svg');
+  background-repeat: round;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.priceTag {
+  display: flex;
+  width: 320px;
+  margin: 20px auto;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  background: hsl(225, 100%, 98%);
+}
+
+.priceIcon {
+  background: url('./images/icon-music.svg');
+  width: 50px;
+  height: 50px;
+  background-repeat: round;
+}
+
+.priceText {
+  text-align: left;
+}
+
+button {
+  margin-top: 10px;
+  padding: 15px;
+  width: 320px;
+  border-radius: 10px;
+  border: none;
+}
+
+.proceed {
+  background: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 900;
+}
+
+.proceed:hover {
+  box-shadow: 0 4px 15px 0 hsl(224, 23%, 55%);
+}
+
+.cancel {
+  background: transparent;
+  font-weight: 900;
 }
 
 .attribution { font-size: 11px; text-align: center; }
