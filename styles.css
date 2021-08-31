@@ -10,9 +10,12 @@ html, body {
 }
 
 .main {
-  width: 100vw;
-  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: calc(100vh - 15px);
   background: url('./images/pattern-background-desktop.svg') no-repeat;
+  background-size: 100%;
   background-color: hsl(225, 100%, 94%);
   font-family: 'Red Hat Display', sans-serif;
   color: hsl(223, 47%, 23%);
@@ -24,7 +27,7 @@ html, body {
   width: 400px;
   margin: 10vh auto;
   border-radius: 20px;
-  box-shadow: 4px 4px 15px 0px rgba(85, 101, 112, 0.1);
+  box-shadow: 0 0 10px 0 hsl(225, 100%, 94%);
   text-align: center;
 }
 
@@ -46,9 +49,9 @@ html, body {
   width: 320px;
   margin: 20px auto;
   align-items: center;
-  justify-content: space-around;
   border-radius: 10px;
   background: hsl(225, 100%, 98%);
+  color: hsl(223, 47%, 23%);
 }
 
 .priceIcon {
@@ -56,10 +59,27 @@ html, body {
   width: 50px;
   height: 50px;
   background-repeat: round;
+  margin: 25px;
 }
 
 .priceText {
+  height: 50px;
+  margin-right: 25px;
   text-align: left;
+  color: hsl(223, 47%, 23%);
+}
+
+.priceContent {
+  font-weight: bold;
+  hsl(224, 23%, 55%);
+}
+
+.priceLink {
+  margin: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: hsl(245, 75%, 52%);
 }
 
 button {
@@ -78,12 +98,32 @@ button {
 
 .proceed:hover {
   box-shadow: 0 4px 15px 0 hsl(224, 23%, 55%);
+  cursor: pointer;
 }
 
 .cancel {
   background: transparent;
   font-weight: 900;
+  color: hsl(224, 23%, 55%);
+  cursor: pointer;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  height: 15px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width 375px) and (max-width: 667px)  {
+  .main {
+    background: hsl(225, 100%, 94%);
+  }
+
+  .card {
+    width: 200px;
+  }
+}
