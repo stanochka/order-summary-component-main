@@ -9,7 +9,7 @@ html, body {
   padding: 0;
 }
 
-.main {
+main {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -121,13 +121,13 @@ button {
   cursor: pointer;
 }
 
-.attribution {
+footer {
   height: 15px;
   font-size: 11px;
   text-align: center;
 }
 
-.attribution a {
+footer a {
   color: hsl(228, 45%, 44%);
 }
 
